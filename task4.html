@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical  Navigation Bar Task</title>
+    <style>
+        .navbar {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgb(144, 226, 226);
+            min-width: 230px;
+            border:10px solid white;
+            outline: 1px solid black;
+        }
+        .navbar li,a {
+            text-decoration: none;
+            list-style: none;
+            padding: 15px;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+
+        .navbar li.active {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        .navbar li.active a {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Vertical Navigation Bar</h2>
+    <div class="navbar">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">Boostrap</a></li>
+    </div>
+</body>
+</html>
